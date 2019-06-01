@@ -7,12 +7,12 @@
  */
 
 class LongestPalindromicSubstring {
-    func longestPalindrome(_ s: String) -> String {
-        guard s.characters.count > 1 else {
+        func longestPalindrome(_ s: String) -> String {
+        guard s.count > 1 else {
             return s
         }
         
-        var sChars = [Character](s.characters)
+        var sChars = Array(s)
         let len = sChars.count
         var maxLen = 1
         var maxStart = 0
